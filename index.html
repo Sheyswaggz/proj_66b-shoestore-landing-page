@@ -70,6 +70,71 @@
     }
   }
   </script>
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "itemListElement": [
+      {
+        "@type": "Product",
+        "position": 1,
+        "name": "Classic Oxford",
+        "description": "Timeless elegance meets modern comfort",
+        "image": "https://shoestore.example.com/assets/images/products/product-1.jpg",
+        "offers": {
+          "@type": "Offer",
+          "price": "129.99",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://shoestore.example.com#product-1"
+        }
+      },
+      {
+        "@type": "Product",
+        "position": 2,
+        "name": "Sport Runner",
+        "description": "Performance-driven design for active lifestyles",
+        "image": "https://shoestore.example.com/assets/images/products/product-2.jpg",
+        "offers": {
+          "@type": "Offer",
+          "price": "89.99",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://shoestore.example.com#product-2"
+        }
+      },
+      {
+        "@type": "Product",
+        "position": 3,
+        "name": "Casual Loafer",
+        "description": "Effortless style for everyday wear",
+        "image": "https://shoestore.example.com/assets/images/products/product-3.jpg",
+        "offers": {
+          "@type": "Offer",
+          "price": "99.99",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://shoestore.example.com#product-3"
+        }
+      },
+      {
+        "@type": "Product",
+        "position": 4,
+        "name": "Evening Elegance",
+        "description": "Sophisticated style for special occasions",
+        "image": "https://shoestore.example.com/assets/images/products/product-4.jpg",
+        "offers": {
+          "@type": "Offer",
+          "price": "149.99",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://shoestore.example.com#product-4"
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <a href="#main" class="skip-link">Skip to main content</a>
@@ -130,89 +195,125 @@
         </header>
         
         <div class="products-grid" role="list">
-          <article class="product-card" role="listitem">
+          <article class="product-card" role="listitem" itemscope itemtype="https://schema.org/Product">
             <div class="product-image">
-              <img 
-                src="assets/product-1.jpg" 
-                alt="Classic leather oxford shoes in brown" 
-                width="400" 
-                height="400"
-                loading="lazy"
-                decoding="async"
-              >
+              <picture>
+                <source 
+                  srcset="assets/images/products/product-1.webp" 
+                  type="image/webp"
+                >
+                <img 
+                  src="assets/images/products/product-1.jpg" 
+                  alt="Classic leather oxford shoes in brown" 
+                  width="400" 
+                  height="400"
+                  loading="lazy"
+                  decoding="async"
+                  itemprop="image"
+                >
+              </picture>
             </div>
             <div class="product-info">
-              <h3 class="product-name">Classic Oxford</h3>
-              <p class="product-description">Timeless elegance meets modern comfort</p>
-              <p class="product-price" aria-label="Price: $129.99">
+              <h3 class="product-name" itemprop="name">Classic Oxford</h3>
+              <p class="product-description" itemprop="description">Timeless elegance meets modern comfort</p>
+              <p class="product-price" aria-label="Price: $129.99" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
                 <span class="currency">$</span>
-                <span class="amount">129.99</span>
+                <span class="amount" itemprop="price" content="129.99">129.99</span>
+                <meta itemprop="priceCurrency" content="USD">
+                <link itemprop="availability" href="https://schema.org/InStock">
               </p>
               <a href="#product-1" class="btn btn-outline" aria-label="View details for Classic Oxford">View Details</a>
             </div>
           </article>
           
-          <article class="product-card" role="listitem">
+          <article class="product-card" role="listitem" itemscope itemtype="https://schema.org/Product">
             <div class="product-image">
-              <img 
-                src="assets/product-2.jpg" 
-                alt="Modern athletic sneakers in white and blue" 
-                width="400" 
-                height="400"
-                loading="lazy"
-                decoding="async"
-              >
+              <picture>
+                <source 
+                  srcset="assets/images/products/product-2.webp" 
+                  type="image/webp"
+                >
+                <img 
+                  src="assets/images/products/product-2.jpg" 
+                  alt="Modern athletic sneakers in white and blue" 
+                  width="400" 
+                  height="400"
+                  loading="lazy"
+                  decoding="async"
+                  itemprop="image"
+                >
+              </picture>
             </div>
             <div class="product-info">
-              <h3 class="product-name">Sport Runner</h3>
-              <p class="product-description">Performance-driven design for active lifestyles</p>
-              <p class="product-price" aria-label="Price: $89.99">
+              <h3 class="product-name" itemprop="name">Sport Runner</h3>
+              <p class="product-description" itemprop="description">Performance-driven design for active lifestyles</p>
+              <p class="product-price" aria-label="Price: $89.99" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
                 <span class="currency">$</span>
-                <span class="amount">89.99</span>
+                <span class="amount" itemprop="price" content="89.99">89.99</span>
+                <meta itemprop="priceCurrency" content="USD">
+                <link itemprop="availability" href="https://schema.org/InStock">
               </p>
               <a href="#product-2" class="btn btn-outline" aria-label="View details for Sport Runner">View Details</a>
             </div>
           </article>
           
-          <article class="product-card" role="listitem">
+          <article class="product-card" role="listitem" itemscope itemtype="https://schema.org/Product">
             <div class="product-image">
-              <img 
-                src="assets/product-3.jpg" 
-                alt="Casual loafers in navy suede" 
-                width="400" 
-                height="400"
-                loading="lazy"
-                decoding="async"
-              >
+              <picture>
+                <source 
+                  srcset="assets/images/products/product-3.webp" 
+                  type="image/webp"
+                >
+                <img 
+                  src="assets/images/products/product-3.jpg" 
+                  alt="Casual loafers in navy suede" 
+                  width="400" 
+                  height="400"
+                  loading="lazy"
+                  decoding="async"
+                  itemprop="image"
+                >
+              </picture>
             </div>
             <div class="product-info">
-              <h3 class="product-name">Casual Loafer</h3>
-              <p class="product-description">Effortless style for everyday wear</p>
-              <p class="product-price" aria-label="Price: $99.99">
+              <h3 class="product-name" itemprop="name">Casual Loafer</h3>
+              <p class="product-description" itemprop="description">Effortless style for everyday wear</p>
+              <p class="product-price" aria-label="Price: $99.99" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
                 <span class="currency">$</span>
-                <span class="amount">99.99</span>
+                <span class="amount" itemprop="price" content="99.99">99.99</span>
+                <meta itemprop="priceCurrency" content="USD">
+                <link itemprop="availability" href="https://schema.org/InStock">
               </p>
               <a href="#product-3" class="btn btn-outline" aria-label="View details for Casual Loafer">View Details</a>
             </div>
           </article>
           
-          <article class="product-card" role="listitem">
+          <article class="product-card" role="listitem" itemscope itemtype="https://schema.org/Product">
             <div class="product-image">
-              <img 
-                src="assets/product-4.jpg" 
-                alt="Elegant high heels in black patent leather" 
-                width="400" 
-                height="400"
-                loading="lazy"
-                decoding="async"
-              >
+              <picture>
+                <source 
+                  srcset="assets/images/products/product-4.webp" 
+                  type="image/webp"
+                >
+                <img 
+                  src="assets/images/products/product-4.jpg" 
+                  alt="Elegant high heels in black patent leather" 
+                  width="400" 
+                  height="400"
+                  loading="lazy"
+                  decoding="async"
+                  itemprop="image"
+                >
+              </picture>
             </div>
             <div class="product-info">
-              <h3 class="product-name">Evening Elegance</h3>
-              <p class="product-description">Sophisticated style for special occasions</p>
-              <p class="product-price" aria-label="Price: $149.99">
+              <h3 class="product-name" itemprop="name">Evening Elegance</h3>
+              <p class="product-description" itemprop="description">Sophisticated style for special occasions</p>
+              <p class="product-price" aria-label="Price: $149.99" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
                 <span class="currency">$</span>
-                <span class="amount">149.99</span>
+                <span class="amount" itemprop="price" content="149.99">149.99</span>
+                <meta itemprop="priceCurrency" content="USD">
+                <link itemprop="availability" href="https://schema.org/InStock">
               </p>
               <a href="#product-4" class="btn btn-outline" aria-label="View details for Evening Elegance">View Details</a>
             </div>
