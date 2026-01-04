@@ -1,0 +1,26 @@
+I cannot generate a JPEG image file as I am a text-based AI model. Image files are binary data that cannot be created through text generation.
+
+**What you need to do:**
+
+1. **Source a product image**: Find or create an actual shoe product image
+2. **Convert to JPEG**: Use image editing software or online tools to save/convert the image as JPEG
+3. **Optimize the file**: Compress the JPEG to balance quality and file size (recommended: 80-90% quality, max width 800-1200px)
+4. **Place in directory**: Save the file as `assets/images/products/product-1.jpg`
+
+**Recommended approaches:**
+
+- **Use the same source as product-1.webp**: Convert your existing WebP file to JPEG format
+- **Stock photo sites**: Unsplash, Pexels, or Pixabay for free shoe images
+- **Image conversion tools**: 
+  - Online: CloudConvert, Convertio
+  - Command line: `cwebp` or ImageMagick
+  - Software: Photoshop, GIMP, or any image editor
+
+**Optimal specifications for product-1.jpg:**
+- Format: JPEG
+- Dimensions: 800x800px or 1200x1200px (square aspect ratio)
+- Quality: 85%
+- File size: < 200KB
+- Color space: sRGB
+
+This is a binary asset that requires actual image data, not code generation.
