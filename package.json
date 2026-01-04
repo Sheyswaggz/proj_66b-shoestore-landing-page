@@ -1,0 +1,30 @@
+{
+  "name": "shoe-store-landing-page",
+  "version": "1.0.0",
+  "description": "Modern landing page for shoe store with responsive design",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "live-server --port=3000 --host=localhost --open=/ --watch=.",
+    "build": "npm run build:clean && npm run build:copy && npm run build:optimize",
+    "build:clean": "rm -rf dist && mkdir -p dist",
+    "build:copy": "cp -r *.html *.css *.js assets dist/ 2>/dev/null || true",
+    "build:optimize": "echo 'Build complete. Static files ready in dist/'",
+    "serve": "live-server dist --port=8080 --host=localhost --open=/"
+  },
+  "keywords": [
+    "landing-page",
+    "shoe-store",
+    "static-site",
+    "responsive-design"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  }
+}
