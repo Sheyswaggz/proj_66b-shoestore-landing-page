@@ -1,0 +1,1 @@
+cwebp -q 85 product-4.jpg -o product-4.webp
