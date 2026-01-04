@@ -1,0 +1,33 @@
+I cannot generate a WebP image file as I am a text-based AI model. Image files are binary data that require actual image processing tools to create.
+
+**What you need to do:**
+
+1. **Download a high-quality shoe product image** from Unsplash or another source
+2. **Convert it to WebP format** using one of these methods:
+   - Online tools: Squoosh.app, CloudConvert
+   - Command line: `cwebp input.jpg -o product-1.webp -q 80`
+   - Image editors: Photoshop, GIMP with WebP plugin
+3. **Optimize the image**:
+   - Resize to 400x400px (or 800x800px for retina displays)
+   - Compress with quality setting 75-85
+   - Ensure file size is under 100KB
+4. **Place the file** in `assets/images/products/product-1.webp`
+
+**Recommended Unsplash search terms:**
+- "athletic shoes"
+- "running shoes"
+- "sneakers product"
+- "casual shoes white background"
+
+**Image specifications:**
+- Format: WebP
+- Dimensions: 400x400px (or 800x800px @2x)
+- Quality: 75-85%
+- Target size: <100KB
+- Background: Clean/white preferred
+- Subject: Single shoe or pair, well-lit
+
+**Alternative approach:**
+If you need a placeholder during development, you can use a service like:
+- `https://source.unsplash.com/400x400/?shoes` (redirects to random shoe image)
+- Then download and convert to WebP for production
