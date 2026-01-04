@@ -1,0 +1,2 @@
+# Using cwebp (from libwebp)
+   cwebp -q 85 -resize 1920 0 input-image.jpg -o assets/images/hero-bg.webp

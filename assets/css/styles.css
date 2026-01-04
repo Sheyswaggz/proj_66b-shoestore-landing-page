@@ -473,20 +473,31 @@ nav a[aria-current="page"] {
   grid-template-columns: 1fr;
   gap: var(--space-2xl);
   padding-block: var(--space-3xl);
-  min-height: 60vh;
+  min-height: 70vh;
   align-items: center;
+  position: relative;
+  isolation: isolate;
 }
 
 .hero-content {
   display: flex;
   flex-direction: column;
   gap: var(--space-lg);
+  position: relative;
+  z-index: 2;
+}
+
+.hero-content h1 {
+  margin-block-end: var(--space-md);
+  line-height: var(--line-height-tight);
+  text-wrap: balance;
 }
 
 .hero-subtitle {
   font-size: var(--font-size-lg);
   color: var(--color-text-secondary);
   line-height: var(--line-height-relaxed);
+  max-width: 60ch;
 }
 
 .hero-actions {
@@ -501,6 +512,20 @@ nav a[aria-current="page"] {
   overflow: hidden;
   border-radius: var(--radius-2xl);
   box-shadow: var(--shadow-xl);
+  background-color: var(--color-neutral-100);
+}
+
+.hero-image::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    hsla(210, 40%, 45%, 0.1) 0%,
+    transparent 50%
+  );
+  z-index: 1;
+  pointer-events: none;
 }
 
 .hero-image img {
@@ -508,12 +533,22 @@ nav a[aria-current="page"] {
   height: auto;
   object-fit: cover;
   aspect-ratio: 3 / 2;
+  transition: transform var(--transition-slow);
+}
+
+.hero-image:hover img {
+  transform: scale(1.02);
 }
 
 @media (min-width: 768px) {
   .hero {
     grid-template-columns: 1fr 1fr;
-    min-height: 70vh;
+    min-height: 75vh;
+    gap: var(--space-3xl);
+  }
+  
+  .hero-content {
+    padding-block: var(--space-2xl);
   }
 }
 
@@ -521,6 +556,14 @@ nav a[aria-current="page"] {
   .hero {
     grid-template-columns: 1.2fr 1fr;
     min-height: 80vh;
+  }
+  
+  .hero-content h1 {
+    font-size: var(--font-size-5xl);
+  }
+  
+  .hero-subtitle {
+    font-size: var(--font-size-xl);
   }
 }
 
@@ -541,6 +584,27 @@ nav a[aria-current="page"] {
   border: 2px solid transparent;
   transition: all var(--transition-base);
   cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.2) 0%,
+    transparent 50%
+  );
+  opacity: 0;
+  transition: opacity var(--transition-base);
+  z-index: -1;
+}
+
+.btn:hover::before {
+  opacity: 1;
 }
 
 .btn-primary {
