@@ -851,6 +851,7 @@ section {
   transition: transform var(--transition-base), box-shadow var(--transition-base);
   position: relative;
   isolation: isolate;
+  contain: layout style paint;
 }
 
 .product-card:hover {
