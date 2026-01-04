@@ -1,0 +1,1 @@
+cwebp -q 85 source-image.jpg -o about-store.webp
