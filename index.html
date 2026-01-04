@@ -78,7 +78,7 @@
     <div class="header-container">
       <div class="logo">
         <a href="/" aria-label="ShoeStore - Home">
-          <img src="assets/logo.svg" alt="ShoeStore Logo" width="150" height="50">
+          <img src="assets/images/logo.svg" alt="ShoeStore Logo" width="150" height="50">
         </a>
       </div>
       
@@ -98,21 +98,27 @@
     <section class="hero" aria-labelledby="hero-title">
       <div class="hero-content">
         <h1 id="hero-title">Step Into Style & Comfort</h1>
-        <p class="hero-subtitle">Discover our curated collection of premium footwear designed for every occasion</p>
+        <p class="hero-subtitle">Discover our curated collection of premium footwear designed for every occasion. Quality craftsmanship meets modern design.</p>
         <div class="hero-actions">
           <a href="#featured-products" class="btn btn-primary" aria-label="Shop our collection">Shop Now</a>
           <a href="#about" class="btn btn-secondary" aria-label="Learn more about ShoeStore">Learn More</a>
         </div>
       </div>
       <div class="hero-image">
-        <img 
-          src="assets/hero-image.jpg" 
-          alt="Premium leather shoes displayed on modern shelving" 
-          width="1200" 
-          height="800"
-          loading="eager"
-          fetchpriority="high"
-        >
+        <picture>
+          <source 
+            srcset="assets/images/hero-bg.webp" 
+            type="image/webp"
+          >
+          <img 
+            src="assets/images/hero-bg.jpg" 
+            alt="Premium leather shoes displayed on modern shelving" 
+            width="1200" 
+            height="800"
+            loading="eager"
+            fetchpriority="high"
+          >
+        </picture>
       </div>
     </section>
     
