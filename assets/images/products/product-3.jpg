@@ -1,0 +1,5 @@
+# Using ImageMagick
+   convert assets/images/products/product-3.webp assets/images/products/product-3.jpg
+   
+   # Using cwebp/dwebp tools
+   dwebp assets/images/products/product-3.webp -o assets/images/products/product-3.jpg
