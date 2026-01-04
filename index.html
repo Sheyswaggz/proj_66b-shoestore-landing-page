@@ -4,20 +4,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   
-  <title>Premium Footwear Collection | ShoeStore</title>
-  <meta name="description" content="Discover our curated collection of premium shoes for every occasion. Quality craftsmanship, modern designs, and exceptional comfort. Visit our store today.">
+  <title>Premium Footwear Collection | ShoeStore - Quality Shoes for Every Occasion</title>
+  <meta name="description" content="Discover our curated collection of premium shoes for every occasion. Quality craftsmanship, modern designs, and exceptional comfort. Visit our store today for expert fitting advice and exclusive styles.">
+  <meta name="keywords" content="premium shoes, quality footwear, shoe store, leather shoes, athletic shoes, casual shoes, formal shoes, shoe fitting">
+  <meta name="author" content="ShoeStore">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   
-  <meta property="og:title" content="Premium Footwear Collection | ShoeStore">
-  <meta property="og:description" content="Discover our curated collection of premium shoes for every occasion. Quality craftsmanship, modern designs, and exceptional comfort.">
+  <meta property="og:title" content="Premium Footwear Collection | ShoeStore - Quality Shoes for Every Occasion">
+  <meta property="og:description" content="Discover our curated collection of premium shoes for every occasion. Quality craftsmanship, modern designs, and exceptional comfort. Expert fitting advice and exclusive styles since 2014.">
   <meta property="og:image" content="https://shoestore.example.com/assets/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="ShoeStore premium footwear collection display">
   <meta property="og:url" content="https://shoestore.example.com">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="ShoeStore">
+  <meta property="og:locale" content="en_US">
   
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Premium Footwear Collection | ShoeStore">
   <meta name="twitter:description" content="Discover our curated collection of premium shoes for every occasion. Quality craftsmanship, modern designs, and exceptional comfort.">
   <meta name="twitter:image" content="https://shoestore.example.com/assets/twitter-card.jpg">
+  <meta name="twitter:image:alt" content="ShoeStore premium footwear collection">
+  <meta name="twitter:site" content="@shoestore">
+  <meta name="twitter:creator" content="@shoestore">
   
   <link rel="canonical" href="https://shoestore.example.com">
   
@@ -32,7 +42,12 @@
     "@type": "LocalBusiness",
     "name": "ShoeStore",
     "image": "https://shoestore.example.com/assets/store-front.jpg",
-    "description": "Premium footwear retailer offering quality shoes for every occasion",
+    "description": "Premium footwear retailer offering quality shoes for every occasion. Specializing in expert fitting services, curated collections, and exceptional customer service since 2014.",
+    "@id": "https://shoestore.example.com",
+    "url": "https://shoestore.example.com",
+    "telephone": "+1-555-123-4567",
+    "email": "info@shoestore.example.com",
+    "priceRange": "$$",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "123 Main Street",
@@ -46,9 +61,6 @@
       "latitude": "34.0522",
       "longitude": "-118.2437"
     },
-    "url": "https://shoestore.example.com",
-    "telephone": "+1-555-123-4567",
-    "priceRange": "$$",
     "openingHoursSpecification": [
       {
         "@type": "OpeningHoursSpecification",
@@ -66,9 +78,28 @@
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": "4.8",
+      "bestRating": "5",
+      "worstRating": "1",
       "reviewCount": "247"
     },
-    "foundingDate": "2014"
+    "foundingDate": "2014",
+    "paymentAccepted": "Cash, Credit Card, Debit Card",
+    "currenciesAccepted": "USD",
+    "areaServed": {
+      "@type": "GeoCircle",
+      "geoMidpoint": {
+        "@type": "GeoCoordinates",
+        "latitude": "34.0522",
+        "longitude": "-118.2437"
+      },
+      "geoRadius": "50000"
+    },
+    "hasMap": "https://maps.google.com/?q=123+Main+Street+Downtown+CA+90210",
+    "sameAs": [
+      "https://facebook.com/shoestore",
+      "https://instagram.com/shoestore",
+      "https://twitter.com/shoestore"
+    ]
   }
   </script>
   
@@ -83,12 +114,18 @@
         "name": "Classic Oxford",
         "description": "Timeless elegance meets modern comfort",
         "image": "https://shoestore.example.com/assets/images/products/product-1.jpg",
+        "brand": {
+          "@type": "Brand",
+          "name": "ShoeStore"
+        },
         "offers": {
           "@type": "Offer",
           "price": "129.99",
           "priceCurrency": "USD",
           "availability": "https://schema.org/InStock",
-          "url": "https://shoestore.example.com#product-1"
+          "url": "https://shoestore.example.com#product-1",
+          "priceValidUntil": "2024-12-31",
+          "itemCondition": "https://schema.org/NewCondition"
         }
       },
       {
@@ -97,12 +134,18 @@
         "name": "Sport Runner",
         "description": "Performance-driven design for active lifestyles",
         "image": "https://shoestore.example.com/assets/images/products/product-2.jpg",
+        "brand": {
+          "@type": "Brand",
+          "name": "ShoeStore"
+        },
         "offers": {
           "@type": "Offer",
           "price": "89.99",
           "priceCurrency": "USD",
           "availability": "https://schema.org/InStock",
-          "url": "https://shoestore.example.com#product-2"
+          "url": "https://shoestore.example.com#product-2",
+          "priceValidUntil": "2024-12-31",
+          "itemCondition": "https://schema.org/NewCondition"
         }
       },
       {
@@ -111,12 +154,18 @@
         "name": "Casual Loafer",
         "description": "Effortless style for everyday wear",
         "image": "https://shoestore.example.com/assets/images/products/product-3.jpg",
+        "brand": {
+          "@type": "Brand",
+          "name": "ShoeStore"
+        },
         "offers": {
           "@type": "Offer",
           "price": "99.99",
           "priceCurrency": "USD",
           "availability": "https://schema.org/InStock",
-          "url": "https://shoestore.example.com#product-3"
+          "url": "https://shoestore.example.com#product-3",
+          "priceValidUntil": "2024-12-31",
+          "itemCondition": "https://schema.org/NewCondition"
         }
       },
       {
@@ -125,15 +174,44 @@
         "name": "Evening Elegance",
         "description": "Sophisticated style for special occasions",
         "image": "https://shoestore.example.com/assets/images/products/product-4.jpg",
+        "brand": {
+          "@type": "Brand",
+          "name": "ShoeStore"
+        },
         "offers": {
           "@type": "Offer",
           "price": "149.99",
           "priceCurrency": "USD",
           "availability": "https://schema.org/InStock",
-          "url": "https://shoestore.example.com#product-4"
+          "url": "https://shoestore.example.com#product-4",
+          "priceValidUntil": "2024-12-31",
+          "itemCondition": "https://schema.org/NewCondition"
         }
       }
     ]
+  }
+  </script>
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "ShoeStore",
+    "url": "https://shoestore.example.com",
+    "description": "Premium footwear collection for every occasion",
+    "publisher": {
+      "@type": "Organization",
+      "name": "ShoeStore",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://shoestore.example.com/assets/images/logo.svg"
+      }
+    },
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://shoestore.example.com/search?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
   }
   </script>
 </head>
