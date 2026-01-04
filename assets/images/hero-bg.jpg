@@ -1,0 +1,1 @@
+convert input.jpg -resize 1920x1080^ -gravity center -extent 1920x1080 -quality 80 assets/images/hero-bg.jpg
