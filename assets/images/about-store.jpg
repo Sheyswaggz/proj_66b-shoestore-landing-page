@@ -1,0 +1,7 @@
+# Using ImageMagick
+   convert assets/images/about-store.webp assets/images/about-store.jpg
+   
+   # Using cwebp/dwebp tools
+   dwebp assets/images/about-store.webp -o assets/images/about-store.jpg
+   
+   # Using online tools or image editors
