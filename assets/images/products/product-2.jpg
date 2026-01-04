@@ -1,0 +1,6 @@
+# If you have product-2.webp, convert it to JPEG using ImageMagick or similar:
+convert assets/images/products/product-2.webp -quality 85 assets/images/products/product-2.jpg
+
+# Or using cwebp/dwebp tools:
+dwebp assets/images/products/product-2.webp -o temp.png
+convert temp.png -quality 85 assets/images/products/product-2.jpg
