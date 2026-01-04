@@ -786,6 +786,14 @@ section {
   padding: var(--space-xl);
   border-radius: var(--radius-xl);
   box-shadow: var(--shadow-md);
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+
+.store-location:hover,
+.store-hours:hover,
+.store-map:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
 }
 
 .store-location h3,
@@ -793,31 +801,60 @@ section {
 .store-map h3 {
   margin-block-end: var(--space-lg);
   color: var(--color-primary-600);
+  font-size: var(--font-size-xl);
 }
 
 .store-location address {
   font-style: normal;
   line-height: var(--line-height-relaxed);
   margin-block-end: var(--space-md);
+  color: var(--color-text-primary);
+}
+
+.store-location address p {
+  margin-block-end: var(--space-xs);
 }
 
 .store-phone,
 .store-email {
   margin-block-end: var(--space-sm);
+  line-height: var(--line-height-relaxed);
+}
+
+.store-phone strong,
+.store-email strong {
+  color: var(--color-text-primary);
+  margin-inline-end: var(--space-xs);
+}
+
+.store-phone a,
+.store-email a {
+  color: var(--color-primary-500);
+  font-weight: var(--font-weight-medium);
+  transition: color var(--transition-fast);
+}
+
+.store-phone a:hover,
+.store-email a:hover {
+  color: var(--color-primary-600);
+  text-decoration: underline;
 }
 
 .store-hours dl {
   display: grid;
   grid-template-columns: auto 1fr;
   gap: var(--space-sm) var(--space-lg);
+  row-gap: var(--space-md);
 }
 
 .store-hours dt {
   font-weight: var(--font-weight-semibold);
+  color: var(--color-text-primary);
 }
 
 .store-hours dd {
   margin: 0;
+  color: var(--color-text-secondary);
 }
 
 .map-container {
@@ -825,6 +862,8 @@ section {
   overflow: hidden;
   border-radius: var(--radius-lg);
   margin-block-end: var(--space-lg);
+  background-color: var(--color-neutral-100);
+  box-shadow: var(--shadow-sm);
 }
 
 .map-container img {
@@ -832,6 +871,15 @@ section {
   height: auto;
   aspect-ratio: 3 / 2;
   object-fit: cover;
+  transition: transform var(--transition-slow);
+}
+
+.map-container:hover img {
+  transform: scale(1.02);
+}
+
+.store-map .btn {
+  width: 100%;
 }
 
 @media (min-width: 768px) {
