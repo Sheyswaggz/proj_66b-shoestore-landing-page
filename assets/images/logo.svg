@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" width="200" height="60">
+  <defs>
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#2c3e50;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3498db;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Shoe Icon -->
+  <g id="shoeIcon">
+    <path d="M 15 35 Q 15 30 20 28 L 35 25 Q 40 24 42 20 L 45 15 Q 46 12 48 12 L 52 12 Q 54 12 54 14 L 54 18 Q 54 20 52 22 L 48 28 Q 46 30 44 31 L 25 38 Q 20 40 15 40 Z" 
+          fill="url(#logoGradient)" 
+          stroke="#2c3e50" 
+          stroke-width="1.5"/>
+    <ellipse cx="22" cy="37" rx="3" ry="2" fill="#fff" opacity="0.3"/>
+    <path d="M 48 13 Q 50 13 51 15 L 52 17" 
+          stroke="#fff" 
+          stroke-width="1.5" 
+          fill="none" 
+          opacity="0.5"/>
+  </g>
+  
+  <!-- Brand Text -->
+  <text x="65" y="28" 
+        font-family="Arial, Helvetica, sans-serif" 
+        font-size="22" 
+        font-weight="bold" 
+        fill="#2c3e50"
+        letter-spacing="1">
+    SHOE
+  </text>
+  
+  <text x="65" y="45" 
+        font-family="Arial, Helvetica, sans-serif" 
+        font-size="14" 
+        font-weight="normal" 
+        fill="#3498db"
+        letter-spacing="2">
+    STORE
+  </text>
+  
+  <!-- Accent Line -->
+  <line x1="65" y1="32" x2="130" y2="32" 
+        stroke="#3498db" 
+        stroke-width="2" 
+        opacity="0.6"/>
+</svg>
