@@ -1,0 +1,1 @@
+cwebp -q 80 -resize 800 800 source-image.jpg -o assets/images/products/product-2.webp
